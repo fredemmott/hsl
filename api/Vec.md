@@ -223,12 +223,12 @@ order.
 ## Vec\sample()
 
 ```Hack
-function sample<Tv>(Container<Tv> $container, int $sample_size): vec<Tv>
+function sample<Tv>(Traversable<Tv> $traversable, int $sample_size): vec<Tv>
 ```
 
 Returns a new vec containing an unbiased random sample of up to
 `$sample_size` elements (fewer iff `$sample_size` is larger than the size of
-`$container`).
+`$traversable`).
 
 ## Vec\shuffle()
 
